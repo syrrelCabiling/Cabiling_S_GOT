@@ -1,44 +1,36 @@
 (() =>{
   console.log('video stuff loaded');
   //variables come first
-  //grab the videos
-  const vidPlayer = document.querySelector('video'),
-      pauseButton = document.querySelectorAll('button')[0],
-      playButton = document.querySelectorAll('button')[1],
-      rewindButton = document.querySelectorAll('button')[2];
+  let sigils = document.querySelectorAll('.sigilContainer'),
+      lightbox = document.querySelector('.lightbox'),
+      closeLightBoxButton = lightbox.querySelector('.close-lightbox');
+      audioStop = closeLightBoxButton.querySelector('.close-lightbox')
 
-//Functions go in the middle!
-
-function volOn() {
-  vidPlayer.muted = false;
+//Functions in the middle
+function showHouseVideo() {
+  //debugger;
+  lightbox.classList.add('show-lightbox');
 }
 
-function volOff() {
-  vidPlayer.muted = true;
+function closeLightbox() {
+  //debugger;
+  lightbox.classList.remove('show-lightbox');
+
+  //next stop video and rewind to 0
 }
 
-function play() {
-  //make the vid play
-  vidPlayer.play();
+function audioStop() {
+  //debugger;
+  lightbox.classList.remove('show-lightbox');
+    showHouseVideo.reset() = true;
+    showHouseVideo.currentTime = 0;
+  //next stop video and rewind to 0
 }
 
-function pause() {
-  //make the vid pause
-  vidPlayer.pause();
-}
-
-function rewind() {
-  //make the vid rewind
-  vidPlayer.currentTime = 0;
-}
-
-  vidPlayer.addEventListener('mouseover',volOn);
-  vidPlayer.addEventListener('mouseout',volOff);
-  playButton.addEventListener('click',play);
-  pauseButton.addEventListener('click',pause);
-  rewindButton.addEventListener('click',rewind);
-
-
+//Event Handling at the bottom
+sigils.forEach(sigil => sigil.addEventListener('click', showHouseVideo));
+closeLightBoxButton.addEventListener('click', closeLightbox);
+audioStop.addEventListener('click', audioStop)
 })();
 
 //So, add event listener first, then set up the function for each term.
