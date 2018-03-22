@@ -10,3 +10,14 @@ body
   color: white;
   font-size: 16px;
 }
+
+video
+{
+  width: 100%;
+}
+
+.wrapper
+{
+  width: 90%;
+  margin: 0 auto;
+}

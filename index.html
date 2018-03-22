@@ -8,6 +8,15 @@
   <title>Video GOT</title>
 </head>
 <body>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/6ZfuNTqbHE8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <section class="wrapper">
+    <video autoplay controls muted>
+      <!--need multiple sources to work across browsers-->
+      <!--nfor iOs devices, MP4 has to be the first source-->
+      <source src="videos/mini_1.mp4" type="video/mp4"><!--nmp4 first always-->
+      <source src="videos/mini_1.ogg" type="video/ogg">
+      <source src="videos/mini_1.webm" type="video/webm">
+        Your browser doesn't support video.Try alternative browsers.
+    </video>
+  </section>
 </body>
 </html>
