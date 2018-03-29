@@ -128,3 +128,15 @@ video {
 	margin-top: 10%;
 	border: thin solid #949393;
 }
+
+.controls
+{
+	padding: 2em 0;
+	border: thin dashed white;
+}
+[data-icon]
+{
+	font-size: 3em;
+	color: white;
+	cursor: pointer;
+}
