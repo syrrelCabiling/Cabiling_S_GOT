@@ -35,10 +35,10 @@ main {
 	margin:0 auto;
 
 	/*uncomment below to hide house banners*/
-	overflow:hidden;
+	/*overflow:hidden;*/
 }
 
-#houseImages { position:relative; width:4000px; transition: all .5s; }
+#houseImages { position:relative; width:6000px; transition: all .5s; }
 #houseImages img { float:left; }
 
 #bottomNav { margin-top:30px; }
@@ -65,23 +65,32 @@ main {
 	-moz-transition:-moz-transform .3s;
 }
 
-.stark { background-position:0px -54px; }
+.stark { background-position:0px -56px; }
 .stark:hover { background-position:0px 0px; }
 
-.baratheon { background-position:-50.5px -54px; }
+.baratheon { background-position:-50.5px -56px; }
 .baratheon:hover { background-position:-51px 0px; }
 
-.lannister { background-position:-101px -54px; }
+.lannister { background-position:-101px -56px; }
 .lannister:hover { background-position:-101px 0px; }
 
-.tully { background-position:-152px -54px; }
+.tully { background-position:-152px -56px; }
 .tully:hover { background-position:-152px 0px; }
 
-.greyjoy { background-position:-202px -54px; }
+.greyjoy { background-position:-202px -56px; }
 .greyjoy:hover { background-position:-202px 0px; }
 
-.arryn { background-position:-253px -54px; }
+.arryn { background-position:-253px -56px; }
 .arryn:hover { background-position:-253px 0px; }
+
+.targaryen { background-position:-303px -56px; }
+.targaryen:hover { background-position:-303px 0px; }
+
+.tyrell { background-position:-354px -56px; }
+.tyrell:hover { background-position:-354px 0px; }
+
+.frey { background-position:-405px -56px; }
+.frey:hover { background-position:-404px 0px; }
 /* ----- end image sprite ----- */
 
 /* ----- classes for transitions ----- */
@@ -102,10 +111,10 @@ main {
 
 .lightbox {
 	display: none;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
+	position: absolute; 
+	top: 0; 
+	width: 100%; 
+	height: 100%; 
 	text-align: center;
 	background-color: rgba(0,0,0,0.95);
 }
@@ -129,14 +138,31 @@ video {
 	border: thin solid #949393;
 }
 
-.controls
-{
+.controls {
 	padding: 2em 0;
 	border: thin dashed white;
 }
+
 [data-icon]
 {
 	font-size: 3em;
 	color: white;
 	cursor: pointer;
 }
+
+/*House Info*/
+
+.house-info
+{
+	color: white;
+	text-align: justify;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding: 30px;
+	line-height: 20px;
+}
+
+
+
+
+
+
